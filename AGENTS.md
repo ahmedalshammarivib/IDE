@@ -35,7 +35,9 @@ types/         → shared TypeScript interfaces
 - Use `npx expo install` — never npm/yarn directly for Expo packages
 
 ## Build Commands
-- npx expo start -c    → dev server (clean cache)
-- npx expo run:android → Android build
-- npx expo run:ios     → iOS build
-- eas build            → production build
+```
+npx expo start -c    → dev server (clean cache)
+npx expo run:android → Android build
+npx expo run:ios     → iOS build
+eas build            → production build
+```
