@@ -1,0 +1,43 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "docfork": {
+      "type": "remote",
+      "url": "https://mcp.docfork.com/mcp",
+      "enabled": true
+    },
+    "rn-guide": {
+      "type": "local",
+      "command": [
+        "npx",
+        "@mrnitro360/react-native-mcp-guide@1.1.0"
+      ],
+      "enabled": true
+    }
+  },
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  },
+  "disabled_providers": [],
+  "provider": {
+    "glm-5": {
+      "name": "GLM-5",
+      "npm": "@ai-sdk/openai-compatible",
+      "models": {
+        "zai-org/GLM-5-FP8": {
+          "name": "GLM-5"
+        }
+      },
+      "options": {
+        "baseURL": "https://api.us-west-2.modal.direct/v1"
+      }
+    }
+  }
+}
